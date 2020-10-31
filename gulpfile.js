@@ -18,7 +18,7 @@ function minifyHtml(){
 function minifyCss () {
     return src('css/*.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
-        .pipe(dest('css/*.css'))
+        .pipe(dest('css'))
 }
 
 /* --- 壓縮 JavaScript --- */
@@ -30,7 +30,7 @@ function minifyJs () {
             })
         )
         .pipe(uglify())
-        .pipe(dest('js/*.js'))
+        .pipe(dest('js'))
 }
 
 function minifyImg () {
@@ -40,7 +40,7 @@ function minifyImg () {
             sigFile: 'images/.tinypng-sigs',
             log: true
         }))
-        .pipe(dest('image/*.{png,jpg,jpeg}'))
+        .pipe(dest('image'))
 }
 
 
