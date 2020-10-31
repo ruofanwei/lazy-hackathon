@@ -315,7 +315,7 @@ ul {
         width: 80%;
         height: 70vh;
         margin: 0 auto;
-        background: url('./../image/bg_header.png') no-repeat center center;
+        background: url('./../image/bg_header.jpg') no-repeat center center;
         background-size: 80% auto;
     }
 }
@@ -614,7 +614,7 @@ ul {
 /* ------- 歷屆成績 ------- */
 .history {
     text-align: center;
-    background: #000 url('./../image/bg_history.png') repeat-y center center;
+    background: #000 url('./../image/bg_history.jpg') repeat-y center center;
     background-attachment: fixed;
     background-size: $width-l auto;
 
@@ -631,7 +631,7 @@ ul {
 /* 歷屆成績 - RWD */
 .history {
     @include mq('tablet-s') {
-        background-image: url('./../image/bg_history-mobile.png');
+        background-image: url('./../image/bg_history-mobile.jpg');
         background-size: cover;
         background-attachment: initial;
     }
@@ -965,7 +965,7 @@ ul {
 
 /* 報名資訊 ------- */
 .subscribe {
-    background: #fff url('./../image/bg_footer.png') no-repeat center center;
+    background: #fff url('./../image/bg_footer.jpg') no-repeat center center;
     background-size: auto 380px;
     border-bottom: 3px solid $color_main;
 
